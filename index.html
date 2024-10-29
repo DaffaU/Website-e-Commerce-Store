@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAFFA SHOP</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="container">
+        <!--Nav bar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img src="images/images/images.png" alt="" style="width: 100px; height: auto;">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#shoes">Sepatu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#bagpacks">Tas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#subcribe">Berlangganan</a>
+                  </li>
+                  <!-- Add this inside your nav bar, before the closing </ul> tag -->
+<li class="nav-item">
+  <a class="nav-link" href="#" id="cart-button" data-bs-toggle="modal" data-bs-target="#cartModal">
+      <img src="images/cart/cart-icon.png" alt="Cart" style="width: 30px;">
+      <span id="cart-count">0</span>
+  </a>
+</li>
+
+<!-- Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="cartModalLabel">Keranjang Anda</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="cart-items">
+              <!-- Cart items will be dynamically added here -->
+              <p>Keranjang Anda Kosong.</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Checkout</button>
+          </div>
+      </div>
+  </div>
+</div>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!--banner section-->
+          <section>
+            <div id="carouselExampleControls" class="carousel slide panda-slide mt-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row d-flex align-items-center p-5">
+                        <div class="col-md-7">
+                            <h1>LCD TV Untuk Anda</h1>
+                            <p>Lebih dari Sekedar TV, Pengalaman yang Berbeda</p>
+                            <h3>Rp.18.000.000</h3>
+                            <button class="btn btn-warning panda-btn">Beli Sekarang</button>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row d-flex align-items-center p-5">
+                        <div class="col-md-7">
+                            <h1>Headphone Untuk Anda</h1>
+                            <p>Kualitas Suara Terbaik </p>
+                            <h3>Rp.700.000</h3>
+                            <button class="btn btn-warning">Beli Sekarang</button>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row d-flex align-items-center p-5">
+                        <div class="col-md-7">
+                            <h1>X-Box Untuk Anda </h1>
+                            <p>Bermain Tanpa Batas</p>
+                            <h3>Rp1.350.000</h3>
+                            <button class="btn btn-warning">Beli Sekarang</button>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+              </div>
+          </section>
+    </header>
+    <main class="container">
+        <section class="container overflow-hidden px-4 mt-5 catagories">
+            <div class="row g-5">
+              <div class="col">
+               <div class="p-3 rounded bg-warning d-flex align-items-center justify-content-around">
+                   <h1 class="text-white">Jam Tangan</h1>
+                   <img src="images/categories/watch.png" alt="">
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3 rounded bg-primary d-flex align-items-center justify-content-around">
+                    <h1 class="text-white">Tas</h1>
+                    <img src="images/categories/bag.png" alt="">
+                 </div>
+               </div>
+               <div class="col">
+                <div class="p-3 rounded bg-success d-flex align-items-center justify-content-around">
+                    <h1 class="text-white">Sepatu</h1>
+                    <img src="images/categories/shoes.png" alt="">
+                 </div>
+               </div>
+        </section>
+        <!--Shoes section (card)-->
+        <section id="shoes" class="mt-5">
+            <h3>Sepatu</h3>
+            <section class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+                <div class="col">
+                  <div class="card panda-card h-100 shadow">
+                    <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Supply 350</h5>
+                      <p class="card-text">Sepatu Supply 350 memberikan kenyamanan dan gaya dengan desain yang modern dan bahan yang berkualitas.</p>
+                      <h5 class="card-title">Rp3.950.000</h5>
+                    </div>
+                    <div class="card-footer panda-card-footer">
+                      <button class="btn btn-warning">Beli Sekarang>></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card panda-card h-100 shadow">
+                    <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nike 360</h5>
+                      <p class="card-text">Sepatu Nike 360 menawarkan kenyamanan dan dukungan maksimal, ideal untuk aktivitas olahraga maupun penggunaan sehari-hari.</p>
+                      <h5 class="card-title">Rp.1.299.000</h5>
+                    </div>
+                    <div class="card-footer panda-card-footer">
+                        <button class="btn btn-warning">Beli Sekarang >></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card panda-card h-100 shadow">
+                    <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Red Airmax</h5>
+                      <p class="card-text">Dengan desain yang ikonik dan warna merah yang mencolok, Red Air Max siap menambah gaya dan kenyamanan pada langkahmu.</p>
+                      <h5 class="card-title">Rp.1.400.000</h5>
+                    </div>
+                    <div class="card-footer panda-card-footer">
+                        <button class="btn btn-warning">Beli Sekarang >></button>
+                    </div>
+                  </div>
+                </div>
+            </section>
+        </section>
+        <!--Backpak section -->
+        <section id="bagpacks" class="mt-5">
+            <h3>Tas</h3>
+            <section class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+                <div class="col">
+                  <div class="card panda-card h-100 shadow">
+                    <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Tas Ogio Merah</h5>
+                      <h5 class="card-title">Rp.782.000</h5>
+                      <p class="card-text">Tas Ogio Warna Merah</p>
+                    </div>
+                    <div class="card-footer panda-card-footer">
+                      <button class="btn btn-warning">Beli Sekarang >></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card panda-card h-100 shadow">
+                    <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Tas Burton Biru</h5>
+                      <h5 class="card-title">Rp.422.500</h5>
+                      <p class="card-text">Tas Burton Warna Biru</p>
+                    </div>
+                    <div class="card-footer panda-card-footer">
+                        <button class="btn btn-warning">Beli Sekarang >></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card panda-card h-100 shadow">
+                    <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Osprey Nebula 32 Hitam</h5>
+                      <h5 class="card-title">Rp.1.900.000</h5>
+                      <p class="card-text">Tas Osprey Nebula Warna Hitam</p>
+                    </div>
+                    <div class="card-footer panda-card-footer">
+                        <button class="btn btn-warning">Beli Sekarang >></button>
+                    </div>
+                  </div>
+                </div>
+            </section>
+        </section>
+        <!--subcribe section-->
+        <section id="subcribe" style="height: 300px;" class="d-flex mt-5 justify-content-center align-items-center panda-subcribe">
+            <div>
+            <h2>INFORMASI</h2>
+            <h6>Dapatkan informasi terbaru tentang penjualan, penawaran khusus, dan lainnya</h6>
+            <input type="text" placeholder="Masukkan Email">
+            <button class="btn btn-warning">KIRIM</button>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center mt-5">
+        <small>&copy; DAFFASTORE. All rights reserved.</small>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      let cart = [];
+      const cartCount = document.getElementById('cart-count');
+      const cartItemsContainer = document.getElementById('cart-items');
+  
+      function addToCart(product) {
+          cart.push(product);
+          updateCartCount();
+          displayCartItems();
+      }
+  
+      function updateCartCount() {
+          cartCount.textContent = cart.length;
+      }
+  
+      function displayCartItems() {
+          if (cart.length === 0) {
+              cartItemsContainer.innerHTML = '<p>Keranjang Anda Kosong.</p>';
+              return;
+          }
+  
+          cartItemsContainer.innerHTML = cart.map((item, index) => `
+              <div>
+                  <h5>${item.title}</h5>
+                  <p>Price: ${item.price}</p>
+                  <button class="btn btn-danger" onclick="removeFromCart(${index})">Remove</button>
+              </div>
+          `).join('');
+      }
+  
+      function removeFromCart(index) {
+          cart.splice(index, 1); // Remove the item from the cart
+          updateCartCount();
+          displayCartItems(); // Refresh the cart display
+      }
+  
+      // Add event listeners to the "Beli Sekarang" buttons
+      document.querySelectorAll('.panda-card-footer button').forEach(button => {
+          button.addEventListener('click', (event) => {
+              const card = event.target.closest('.panda-card');
+              const title = card.querySelector('.card-title').textContent;
+              const price = card.querySelector('.card-title:last-of-type').textContent;
+  
+              addToCart({ title, price });
+          });
+      });
+  </script>
+</body>
+</html>
